@@ -1,0 +1,3 @@
+/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/photometric_reconstruction.dir
+/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/edit_cache.dir
+/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/rebuild_cache.dir

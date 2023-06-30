@@ -7,11 +7,16 @@ Implementation for MICCAI 2022 paper **[Photometric single-view dense 3D reconst
 
 ## Setup
 
-WIP
+Make sure Eigen, OpenCV, and Ceres are installed. Add Ceres installation location to environment variable called `CERES_PATH`.
 
-## Dataset
-
-TODO
+After cloning the repo, run the following:
+```
+mkdir build
+cd build
+cmake ../photometric_reconstruction
+make
+```
+Edit the `get_camera_params()` function with your camera's parameters based on the paper.
 
 ## Calibration
 
@@ -19,7 +24,9 @@ TODO
 
 ## Reconstruction/Visualization
 
-WIP
+Example images included in `images` directory:
+Original: ![image](images/frame-000055.color.jpg)
+Reconstructed: ![image](images/depth_map_cpp.png)
 
 ## Evaluation
 

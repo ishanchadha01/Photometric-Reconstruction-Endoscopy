@@ -1,0 +1,55 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7b032/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b032.dir/build.make CMakeFiles/cmTC_7b032.dir/build
+gmake[1]: Entering directory '/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b032.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_7b032.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7b032
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b032.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_7b032.dir/CheckFunctionExists.c.o -o cmTC_7b032 
+/usr/bin/ld: CMakeFiles/cmTC_7b032.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_7b032.dir/build.make:99: cmTC_7b032] Error 1
+gmake[1]: Leaving directory '/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7b032/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_81ad9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_81ad9.dir/build.make CMakeFiles/cmTC_81ad9.dir/build
+gmake[1]: Entering directory '/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_81ad9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_81ad9.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_81ad9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81ad9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_81ad9.dir/CheckFunctionExists.c.o -o cmTC_81ad9  /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_81ad9.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_81ad9.dir/build.make:102: cmTC_81ad9] Error 1
+gmake[1]: Leaving directory '/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_81ad9/fast] Error 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0fa7b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0fa7b.dir/build.make CMakeFiles/cmTC_0fa7b.dir/build
+gmake[1]: Entering directory '/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0fa7b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_0fa7b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0fa7b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fa7b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_0fa7b.dir/CheckFunctionExists.c.o -o cmTC_0fa7b  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so /usr/lib/x86_64-linux-gnu/libf77blas.so /usr/lib/x86_64-linux-gnu/libatlas.so -fortranlibs 
+cc: error: unrecognized command-line option ‘-fortranlibs’
+gmake[1]: *** [CMakeFiles/cmTC_0fa7b.dir/build.make:103: cmTC_0fa7b] Error 1
+gmake[1]: Leaving directory '/home/ishan/Documents/projects/photometric_approach/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0fa7b/fast] Error 2
+
+
+

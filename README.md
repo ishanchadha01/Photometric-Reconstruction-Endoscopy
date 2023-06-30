@@ -18,9 +18,6 @@ make
 ```
 Edit the `get_camera_params()` function with your camera's parameters based on the paper.
 
-## Calibration
-
-TODO
 
 ## Reconstruction/Visualization
 
@@ -34,13 +31,16 @@ Reconstructed:
 
 ![image](images/depth_map_cpp.png)
 
+
 ## Evaluation
 
 TODO
 
+
 ## 🤝 Contributing
 
 Contributions from the community are welcome! If you have any ideas or suggestions for improving the library, please feel free to: submit a pull request, raise an issue, e.t.c.
+
 
 ## Bibtex
 

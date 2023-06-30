@@ -25,7 +25,9 @@ TODO
 ## Reconstruction/Visualization
 
 Example images included in `images` directory:
+
 Original: ![image](images/frame-000055.color.jpg)
+
 Reconstructed: ![image](images/depth_map_cpp.png)
 
 ## Evaluation

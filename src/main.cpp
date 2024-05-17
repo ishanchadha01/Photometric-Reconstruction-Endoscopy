@@ -24,10 +24,10 @@ std::vector<double> get_camera_params() {
 
 
 // Huber loss function
-auto huber(auto value, auto huber_thresh) {
-  if (value <= huber_thresh) return value;
-  return 2.0*sqrt(value) - 1.0;
-}
+// auto huber(auto value, auto huber_thresh) {
+//   if (value <= huber_thresh) return value;
+//   return 2.0*sqrt(value) - 1.0;
+// }
 
 
 // Simple unprojection model
@@ -158,14 +158,18 @@ struct DepthEstimationNLS {
 
     // Compute cost function
     T C = I - L;
-    C = huber(C, huber_thresh);
+    if (C > huber_thresh) C = 2.0*sqrt(C) - 1.0;
 
     // Compute regularization function
     // T R;
     double intensity_gradient_adjusted = exp(-1 * intensity_gradient); // TODO: gradient used for smoothing here
     T depth_gradient = abs(d); // Computing actual gradient or hessian is difficult with ceres
     T R;
-    R = intensity_gradient_adjusted * huber(depth_gradient, huber_thresh);
+    T reg_huber;
+    if (depth_gradient <= huber_thresh) reg_huber = depth_gradient;
+    else reg_huber = 2.0*sqrt(depth_gradient) - 1.0;
+    // R = intensity_gradient_adjusted * huber(depth_gradient, huber_thresh);
+    R = intensity_gradient_adjusted * reg_huber;
     // std::cout << "R out " << R << " " << C + regularization_lambda * R << std::endl;
     residual[0] = C + regularization_lambda * R;
 
